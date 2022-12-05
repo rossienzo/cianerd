@@ -1,0 +1,17 @@
+<% if (typeof alertType !== 'undefined') { %>
+    <% if(alertType == "success") { %>
+    <div
+        class="alert alert-success alert-dismissible fade show mt-4 w-100" role="alert">
+        <strong>Sua mensagem foi enviada!</strong> Agradeçemos por entrar em contato.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <% } else if(alertType == "error") { %> 
+    <div
+        class="alert alert-danger alert-dismissible fade show mt-4 w-100" role="alert">
+        <strong>A mensagem não foi enviada!</strong> Entre em contato pelo telefone ou e-mail para que possamos te ajudar!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } else {} %>
+<% } %>
+

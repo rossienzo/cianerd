@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./res/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+    <title>CiaNerd | <%= title %></title>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top shadow-sm">
+        <div class="container">
+            <a href="/" id="branding" class="navbar-brand mr-auto">
+                <img src="./res/imgs/logo-cianerd-branca.png" alt="logo">
+            </a>
+            <button id="ToggleBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse justify-content-end">
+                <ul id="NavbarItems" class="navbar-nav mr-auto text">
+                    <li 
+                    <% if(title == "Home" || title == "home") { %> 
+                        class="nav-item active"
+                    <% } else { %> 
+                        class="nav-item"
+                    <% } %> >
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+
+                    <li 
+                    <% if(title == "Contato" || title == "contato") { %> 
+                        class="nav-item active"
+                    <% } else { %> 
+                        class="nav-item"
+                    <% } %> >
+                        <a href="/contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+
+
+
+

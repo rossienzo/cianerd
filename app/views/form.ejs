@@ -1,0 +1,37 @@
+<form method="post" action="/contato">
+    <div class="mb-3">
+      <div class="row">
+        <div class="col">
+          <label for="exampleInputName1" class="form-label">Nome</label>
+          <input type="text" class="form-control rounded-0" id="Nome" name="name" aria-describedby="name" minlength="3" required>
+        </div>
+        <div class="col">
+          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <input type="email" class="form-control rounded-0" id="Email" name="email" aria-describedby="emailHelp" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <div class="row">
+        <div class="col">
+          <label for="exampleInputNumber1" class="form-label">Telefone</label>
+          <input type="number" class="form-control rounded-0" id="Numero" name="phone" aria-describedby="number" required>
+        </div>
+        <div class="col">
+          <label for="exampleInputSubject1" class="form-label">Assunto</label>
+          <input type="" class="form-control rounded-0" id="Assunto" name="subject" aria-describedby="subject" minlength="4" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputMensage1" class="form-label">Mensagem</label>
+        <textarea class="form-control rounded-0"  row="6" style="height: 8em;" id="Mensagem" name="message" minlength="30" required></textarea>
+    </div>
+
+    <div class="mb-3 btn-submit">
+      <button id="Submit" type="submit" class="btn-cia">Enviar Mensagem</button>
+    </div>
+</form>
+    

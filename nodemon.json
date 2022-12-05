@@ -1,0 +1,17 @@
+{
+    "verbose": true,
+    "homepage": "localhost:3000",
+    "ignore": [
+        ".git",
+        "node_modules",
+        "public"
+    ],
+    "watch": [
+        "server.js",
+        "app"
+    ],
+    "ext": "*",
+    "execMap": {
+        "ts": "tsc"
+    }
+}
